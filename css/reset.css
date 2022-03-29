@@ -48,4 +48,4 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-a {color: ; text-decoration: none;}
+a {color: inherit; text-decoration: none;}

@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>베비언스</title>
+    <!--CSS-->
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/main.css">
+
+    <!--JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
     
 </head>
@@ -31,9 +36,9 @@
                 <div class="search_wrap">
                     <button class="search_btn"><img src="img/find.png" alt="검색"></button>
                     <div class="search_form">
-                        <form action="">
-                            <input type="text" class="search_txt">
-                            <input type="image" class="search_ico">
+                        <form>
+                            <input type="text" class="search_txt" value="검색">
+                            <input type="image" class="search_ico" alt="icon">
 
                             <button class="search_close"></button>
                         </form>
@@ -43,7 +48,7 @@
                     <button class="hamburger_button"><img src="img/line.png" alt="햄버거버튼"></button>
                     <div class="allmenu_box">
                         <ul class="a1">
-                            <li><a href="#">베비언스 스토리</a>
+                            <li><a href="#">베비언스 스토리</a><button></button>
                                 <ul class="a2">
                                     <li><a href="#">안심 프로젝트</a>
                                         <ul class="a3">
@@ -54,7 +59,7 @@
                                     <li><a href="#">네덜란드 산양 스토리</a></li>
                                 </ul><!--.a2-->
                             </li>
-                            <li><a href="#">제품 스토리</a>
+                            <li><a href="#">제품 스토리</a><button></button>
                                 <ul class="a2">
                                     <li><a href="#">우리 아이를 위한 제품</a>
                                         <ul class="a3">
@@ -64,23 +69,23 @@
                                             <li><a href="#">유아용품</a></li>
                                         </ul><!--.gnb3-->
                                     </li>
-                                    <li><a href="#">온 가족을 위한 제품</a>
+                                    <li><a href="#">온 가족을 위한 제품</a><button></button>
                                         <ul class="a3">
                                             <li><a href="#">생리대/성인기저귀</a></li>
                                             <li><a href="#">마스크</a></li>
                                         </ul><!--.a3-->
                                     </li>
-                                    <li><a href="#">구매처 안내</a></li>
+                                    <li><a href="#">구매처 안내</a><button></button></li>
                                 </ul><!--.a2-->
                             </li>
-                            <li><a href="#">정보 나눔</a>
+                            <li><a href="#">정보 나눔</a><button></button>
                                 <ul class="a2">
                                     <li><a href="#">초보맘 정보</a></li>
                                     <li><a href="#">베비언스 TV</a></li>
                                     <li><a href="#">셀럽 메세지</a></li>
                                 </ul><!--a2-->
                             </li>
-                            <li><a href="#">이벤트/체험단</a>
+                            <li><a href="#">이벤트/체험단</a><button></button>
                                 <ul class="a2">
                                     <li><a href="#">이벤트</a>
                                         <ul class="a3">
@@ -98,7 +103,7 @@
                                     </li>
                                 </ul><!--.a2-->
                             </li>
-                            <li><a href="#">커뮤니티</a>
+                            <li><a href="#">커뮤니티</a><button></button>
                                 <ul class="a2">
                                     <li><a href="#">새소식</a></li>
                                     <li><a href="#">고객센터</a>
@@ -191,6 +196,7 @@
     </header>
     <!--비주얼 시작-->
     <section class="visual_wrap"><!--다른 비주얼을 넣을 때의 구성으로 변경할 것--> 
+        <h2 class="blind">visual</h2> 
         <div class="visual_grop">
             <div class="visual_image1"><!--내용 구성에 따라 별도의 박스가 필요할 수 있음-->
                 <span class="blind"></span>                
@@ -206,8 +212,8 @@
             </div>
         </div>
         <div class="control_button">
-            <button class="prev"><img src="img/prev.png" alt="이전보기"></button>
-            <button class="next"><img src="img/next.png" alt="다음보기"></button>
+            <!-- <button class="prev"><img src="img/prev.png" alt="이전보기"></button>
+            <button class="next"><img src="img/next.png" alt="다음보기"></button> -->
         </div>
     </section>        
     <!--비주얼 끝-->
@@ -334,15 +340,14 @@
         <div class="container">
             <div class="footer_menu">
                 <ul>
-                    <li><a href="#">회사소개</a></li>
                     <li><a href="#">이용약관</a></li>
                     <li><a href="#">이메일무단수집거부</a></li>
                     <li><a href="#">개인정보처리방침</a></li>
-                    <li><a href="#">사업자확인</a></li>
                 </ul>
             </div>
             <div class="corp_info">
                 <div class="footer_info">
+                    <img src="img/LG_logo.png" alt="LG로고">
                     <div class="footer_order">
                         <p>주문 / 취소 / 배송 문의</p>
                         <strong>080-868-8255</strong>
@@ -350,12 +355,21 @@
                         <strong>080-023-7007</strong><br>
                         <span>평일 : 09:00 - 18:00<br>점심 : 12:00 - 13:00</span>
                     </div>
-                    <img src="img/LG_logo.png" alt="LG로고">
                     <div class="footer_address">
-                        <address>사업자등록번호 : 107-81-98143 통신판매업신고번호 : 제2011-서울종로-0190호 대표이사 : 차석용<br>
-                        주소 : 110-062 서울특별시 종로구 새문안로 58 (신문로 2가 92번지) LG광화문빌딩<br>
-                        전자메일주소 : hojinchoi@lghnh.com 호스팅제공자 : ㈜LG생활건강</address>
-                        <p>Copyright &copy; LG Household & Health Care Ltd. All rights reserved.</p>
+                        <address>
+                            사업자등록번호 : 107-81-98143<br>
+                            통신판매업신고번호 :<br>
+                            제2011-서울종로-0190호<br>
+                            대표이사 : 차석용<br>
+                            주소 : 110-062 서울특별시 종로구 새문안로 58<br>
+                            (신문로 2가 92번지) LG광화문빌딩<br>
+                            전자메일주소 : hojinchoi@lghnh.com<br>
+                            호스팅제공자 : ㈜LG생활건강
+                        </address>
+                        <p>
+                            Copyright &copy; LG Household & Health Care Ltd.<br>
+                            All rights reserved.
+                        </p>
                     </div>
                     
                 </div>
